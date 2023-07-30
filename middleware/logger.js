@@ -1,17 +1,17 @@
 const {format} = require ('date-fns')
-const {vv4 : uuid} =require('uuid')
+const {v4 : uuid} =require('uuid')
 const fs = require ('fs')
 const fsPromises = require('fs/promises')
 const path  = require('path')
 const logEvents =async (message,logFileName)=>{
-    const dateTime=format(new Date(),'yyyymmdd /t HH : mm :ss')
-    const logItems = `${dateTime} \t ${uuid} \t ${message}\n`
+    const dateTime=format(new Date(),'yyyyMMdd \t HH:mm:ss')
+    const logItem = `${dateTime} \t ${uuid} \t ${message}\n`
     try {
-    if ( !fs.existsSync(path.join(__dirname,'. .','logs'))){
+    if ( !fs.existsSync(path.join(__dirname,'..','logs'))){
         await fsPromises.mkdir(path.join(__dirname,'..','logs'))
     }
     await fsPromises.appendFile(path.join(__dirname,'..','logs',logFileName),
-    logItems)   
+    logItem)   
     }catch(err){
         console.log(err)
     }

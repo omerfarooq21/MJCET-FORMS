@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Muffakham Jah College of Engineering and Technology</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -12,7 +12,7 @@
     <main>
         <section>
             <aside>
-                <h2 class="section-title">🧑‍💻 Muffakham Jah College of Engineering and Technology</h2>
+
                 <form class="application-form">
                     <fieldset>
                         <legend class="form-legend">Application Form</legend>
@@ -36,48 +36,56 @@
                                   <label for="profile-picture" class="upload-label">Choose File</label>
                                 </div>
                                 <img id="preview-image" src="#" alt="Preview" class="preview-image">
-                              </li>
-                            <li class="form-field">
-                                <label>DOB + Age:</label>
-                                <ul>
-                                    <li class="form-field">
-                                        <label for="dob">Date of Birth:</label>
-                                        <input type="date" id="dob" name="dob" required>
-                                    </li>
-                                    <li class="form-field">
-                                        <label for="age">Age:</label>
-                                        <input type="number" id="age" name="age" required>
-                                    </li>
-                                </ul>
                             </li>
-                            <li class="form-field">
-                                <label for="place-of-birth">Place of Birth:</label>
-                                <input type="text" id="place-of-birth" name="place-of-birth" required>
-                            </li>
-                            <li class="form-field">
-                                <label for="nationality">Nationality:</label>
-                                <input type="text" id="nationality" name="nationality" required>
-                            </li>
-                            <li class="form-field">
-                                <label for="religion">Religion:</label>
-                                <input type="text" id="religion" name="religion" required>
-                            </li>
-                            <li class="form-field">
-                                <label for="mother-tongue">Mother Tongue:</label>
-                                <input type="text" id="mother-tongue" name="mother-tongue" required>
-                            </li>
-                            <li class="form-field">
-                                <label for="father-profession">Profession of Father:</label>
-                                <input type="text" id="father-profession" name="father-profession" required>
-                            </li>
-                            <li class="form-field">
-                                <label for="income">Income in Rs:</label>
-                                <input type="text" id="income" name="income" required>
-                            </li>
-                            <li class="form-field">
-                                <label for="work-place">Place of Work:</label>
-                                <input type="text" id="work-place" name="work-place" required>
-                            </li>
+                            
+                            <fieldset>
+                                <legend class="form-sub-legend">DOB + Age</legend>
+                                <li class="form-field">
+                                    <label for="dob">Date of Birth:</label>
+                                    <input type="date" id="dob" name="dob" required>
+                                </li>
+                                <li class="form-field">
+                                    <label for="age">Age:</label>
+                                    <input type="number" id="age" name="age" required>
+                                </li>
+                                <li class="form-field">
+                                    <label for="place-of-birth">Place of Birth:</label>
+                                    <input type="text" id="place-of-birth" name="place-of-birth" required>
+                                </li>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend class="form-sub-legend">Background Information</legend>
+                                <li class="form-field">
+                                    <label for="nationality">Nationality:</label>
+                                    <input type="text" id="nationality" name="nationality" required>
+                                </li>
+                                <li class="form-field">
+                                    <label for="religion">Religion:</label>
+                                    <input type="text" id="religion" name="religion" required>
+                                </li>
+                                <li class="form-field">
+                                    <label for="mother-tongue">Mother Tongue:</label>
+                                    <input type="text" id="mother-tongue" name="mother-tongue" required>
+                                </li>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend class="form-sub-legend">Profession of Parent/Guardian</legend>
+                                <li class="form-field">
+                                    <label for="Profession">Profession</label>
+                                    <input type="text" id="Profession" name="Profession" required>
+                                </li>
+                                <li class="form-field">
+                                    <label for="income">Income in Rs:</label>
+                                    <input type="text" id="income" name="income" required>
+                                </li>
+                                <li class="form-field">
+                                    <label for="work-place">Place of Work:</label>
+                                    <input type="text" id="work-place" name="work-place" required>
+                                </li>
+                            </fieldset>
+                            
                             <li class="form-field">
                                 <fieldset>
                                     <legend class="form-sub-legend">Address:</legend>
@@ -91,7 +99,7 @@
                                             <input type="text" id="pincode" name="pincode" required>
                                         </li>
                                         <li class="form-field">
-                                            <label for="father-phone">Phone Number (Father):</label>
+                                            <label for="father-phone">Phone Number (Parent/Guardian):</label>
                                             <input type="text" id="father-phone" name="father-phone" required>
                                         </li>
                                     </ol>
